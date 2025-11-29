@@ -14,7 +14,7 @@ from mani_skill.utils.registration import register_env
 from mani_skill.utils.scene_builder.table import TableSceneBuilder
 from mani_skill.utils.structs.pose import Pose
 
-from agents.robots.so101.so_101 import SO101
+from grasp_cube.agents.robots.so101.so_101 import SO101
 
 
 @register_env("PickCubeSO101-v1", max_episode_steps=50)

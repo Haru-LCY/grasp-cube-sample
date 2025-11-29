@@ -5,7 +5,7 @@ import sapien
 from mani_skill.envs.sapien_env import BaseEnv
 from mani_skill.utils.structs.pose import to_sapien_pose
 from transforms3d import euler
-from motionplanning.two_finger_gripper.motionplanner import TwoFingerGripperMotionPlanningSolver
+from grasp_cube.motionplanning.two_finger_gripper.motionplanner import TwoFingerGripperMotionPlanningSolver
 
 
 class SO101ArmMotionPlanningSolver (TwoFingerGripperMotionPlanningSolver):

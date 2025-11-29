@@ -14,11 +14,13 @@ from mani_skill.utils import common
 from mani_skill.utils.structs.actor import Actor
 from mani_skill.utils.structs.pose import Pose
 
+from grasp_cube import PACKAGE_PATH
+
 
 @register_agent()
 class SO101(BaseAgent):
     uid = "so101"
-    urdf_path = f"assets/robots/so101/so101_new/so101.urdf"
+    urdf_path = str(PACKAGE_PATH / "assets/robots/so101/so101_new/so101.urdf")
     urdf_config = dict(
         _materials=dict(
             gripper=dict(static_friction=2, dynamic_friction=2, restitution=0.0)

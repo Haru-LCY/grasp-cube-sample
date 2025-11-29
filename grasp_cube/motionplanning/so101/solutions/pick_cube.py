@@ -2,10 +2,10 @@ import numpy as np
 import sapien
 from transforms3d.euler import euler2quat
 
-from envs.tasks.pick_cube_so101 import PickCubeSO101Env
-from motionplanning.so101.motionplanner import \
+from grasp_cube.envs.tasks.pick_cube_so101 import PickCubeSO101Env
+from grasp_cube.motionplanning.so101.motionplanner import \
     SO101ArmMotionPlanningSolver
-from motionplanning.base_motionplanner.utils import (
+from grasp_cube.motionplanning.base_motionplanner.utils import (
     compute_grasp_info_by_obb, get_actor_obb)
 
 def solve(env: PickCubeSO101Env, seed=None, debug=False, vis=False):

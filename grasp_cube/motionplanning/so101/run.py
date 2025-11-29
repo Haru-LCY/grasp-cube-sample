@@ -1,10 +1,6 @@
 import os
 import sys
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
-
 import multiprocessing as mp
 import os
 from copy import deepcopy
@@ -16,9 +12,7 @@ from tqdm import tqdm
 import os.path as osp
 from mani_skill.utils.wrappers.record import RecordEpisode
 from mani_skill.trajectory.merge_trajectory import merge_trajectories
-from motionplanning.so101.solutions import solvePickCube
-
-from envs.tasks.pick_cube_so101 import PickCubeSO101Env
+from grasp_cube.motionplanning.so101.solutions import solvePickCube
 
 MP_SOLUTIONS = {
     "PickCubeSO101-v1": solvePickCube,

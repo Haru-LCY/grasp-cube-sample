@@ -4,7 +4,7 @@ import sapien
 
 from mani_skill.envs.sapien_env import BaseEnv
 from mani_skill.envs.scene import ManiSkillScene
-from motionplanning.base_motionplanner.motionplanner import BaseMotionPlanningSolver
+from grasp_cube.motionplanning.base_motionplanner.motionplanner import BaseMotionPlanningSolver
 from transforms3d import quaternions
 
 

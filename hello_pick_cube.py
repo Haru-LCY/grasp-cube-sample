@@ -2,8 +2,8 @@
 Instantiates a empty environment with a floor, and attempts to place any given robot in there
 """
 
-import agents.robots.so101.so_101
-import envs.tasks.pick_cube_so101
+import grasp_cube.agents.robots.so101.so_101
+import grasp_cube.envs.tasks.pick_cube_so101
 from dataclasses import dataclass
 from typing import Annotated, Optional
 import tyro
